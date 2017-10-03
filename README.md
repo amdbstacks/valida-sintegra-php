@@ -5,7 +5,7 @@ Desenvolvedor PHP
 
 Metodos validam inscrição estadual para todos os estados e disatrito federal do Brasil.
 
-usuabilidade
+usabilidade
 
 Instancie a classe 
 
