@@ -68,4 +68,4 @@ Ambas as funçõesa acima tem como unico parametro a inscrição estadual retorn
 
 Função CheckIE permite dinamizar ainda mais bastando passar como parametros a inscrição estadual e a unidade federativa como 
 AC,AL,AM,AP,BA,CE,DF,ES,GO,MA,MG,MS,MT,PA,PB,PE,PI,PR,RJ,RN,RO,RR,RS,SC,SE,SP,TO.
-Sedo retorno verdadeiro quando inscrição válida.
+Sendo retorno verdadeiro quando inscrição válida.
