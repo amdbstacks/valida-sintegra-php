@@ -3,7 +3,7 @@ Calsse validadora de Sintegra (inscrição estadual) em PHP
 Editada por Aminadabe dos Santos da Silva
 Desenvolvedor PHP
 
-Metodos validam inscrição estadual para todos os estados e disatrito federal do Brasil.
+Metodos validam inscrição estadual para todos os estados e distrito federal do Brasil.
 
 usabilidade
 
