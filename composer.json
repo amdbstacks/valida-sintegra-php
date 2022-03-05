@@ -1,0 +1,23 @@
+{
+	"require" : {
+		"paillechat/php-enum" : "^2.0"
+	},
+	"name" : "Valida Sintegra PHP",
+	"description" : "Biblioteca de validação de inscrição estadual pra estados brasileiros",
+	"minimum-stability" : "RC",
+	"authors" : [{
+			"name" : "Aminadabe Silva",
+			"email" : "aminadabesantos@outlook.com.br"
+		}
+	],
+	"autoload" : {
+		"psr-4" : {
+			"Sintegra\\" : "src"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"Sintegra\\" : "src"
+		}
+	}
+}
