@@ -4,18 +4,18 @@ namespace Sintegra\Domain\Core;
 class SintegraAcre
 {
 
-    protected function validar($ie)
+    protected function validar($sintegra) : bool
     {
-        if (strlen($ie) != 13)
-            return FALSE;
+        if (strlen($sintegra) != 13)
+            return false;
 
-        if (substr($ie, 0, 2) != '01')
-            return FALSE;
+        if (substr($sintegra, 0, 2) != '01')
+            return false;
 
         $b = 4;
         $soma = 0;
         for ($i = 0; $i <= 10; $i ++) {
-            $soma += $ie[$i] * $b;
+            $soma += $sintegra[$i] * $b;
             $b --;
             if ($b == 1) {
                 $b = 9;
@@ -27,13 +27,13 @@ class SintegraAcre
         if ($dig >= 10)
             $dig = 0;
 
-        if (!($dig == $ie[11]))
-            return FALSE;
+        if (!($dig == $sintegra[11]))
+            return false;
 
         $b = 5;
         $soma = 0;
         for ($i = 0; $i <= 11; $i ++) {
-            $soma += $ie[$i] * $b;
+            $soma += $sintegra[$i] * $b;
             $b --;
             if ($b == 1)
                 $b = 9;
@@ -44,7 +44,7 @@ class SintegraAcre
         if ($dig >= 10)
             $dig = 0;
 
-        return ($dig == $ie[12]);
+        return ($dig == $sintegra[12]);
     }
 }
 
