@@ -1,7 +1,7 @@
 <?php
-namespace Sintegra\Domain\Core;
+namespace Sintegra\Domain\Core\Service;
 
-class SintegraAmazonas
+class SintegraCeara
 {
 
     protected function validar($sintegra): bool
@@ -15,19 +15,14 @@ class SintegraAmazonas
             $soma += $sintegra[$i] * $b;
             $b --;
         }
-        
-        if ($soma <= 11) {
-            $dig = 11 - $soma;
-        } else {
-            $r = $soma % 11;
-            if ($r <= 1) {
-                $dig = 0;
-            } else {
-                $dig = 11 - $r;
-            }
-        }
+
+        $dig = 11 - ($soma % 11);
+
+        if ($dig >= 10)
+            $dig = 0;
 
         return ($dig == $sintegra[8]);
     }
 }
+
 

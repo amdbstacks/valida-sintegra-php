@@ -1,5 +1,5 @@
 <?php
-namespace Sintegra\Domain\Core;
+namespace Sintegra\Domain\Core\Service;
 
 class SintegraMaranhao
 {
