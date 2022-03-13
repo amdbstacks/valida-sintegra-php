@@ -4,7 +4,7 @@ namespace Sintegra\Domain\Core\Service;
 class SintegraParana
 {
 
-    protected function validar($sintegra): bool
+    public function validar($sintegra): bool
     {
         if (strlen($sintegra) != 10)
             return false;

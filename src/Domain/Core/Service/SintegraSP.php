@@ -4,7 +4,7 @@ namespace Sintegra\Domain\Core\Service;
 class SintegraSP
 {
 
-    protected function validar($sintegra): bool
+    public function validar($sintegra): bool
     {
         if (strtoupper(substr($sintegra, 0, 1)) == 'P') {
             if (strlen($sintegra) != 13) {

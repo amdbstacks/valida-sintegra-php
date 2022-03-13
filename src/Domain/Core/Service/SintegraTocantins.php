@@ -4,7 +4,7 @@ namespace Sintegra\Domain\Core\Service;
 class SintegraTocantins
 {
 
-    protected function validar($sintegra): bool
+    public function validar($sintegra): bool
     {
         if (strlen($sintegra) != 11)
             return false;
