@@ -60,7 +60,7 @@ class Estados extends Enum
     
     protected const MS="Mato Grosso do Sul";
     
-    protected const MG="MInas Gerais";
+    protected const MG="Minas Gerais";
     
     protected const PA="Pará";
     

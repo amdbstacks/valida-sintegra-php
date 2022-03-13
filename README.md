@@ -1,71 +1,61 @@
-Calsse validadora de Sintegra (inscrição estadual) em PHP
+#Valida Sintegra PHP
 
-Editada por Aminadabe dos Santos da Silva
-Desenvolvedor PHP
+A biblioteca de validação de inscrição estadual valida sintegra PHP, foi desenvolvida com o intuito de ser um componente de código aberto e gratuito pra ser integrado ao seu sistema escrito em PHP.
 
-Metodos validam inscrição estadual para todos os estados e distrito federal do Brasil.
+A biblioteca foi escrita agnostica a fremework, podendo ser usada como componente nos mais robustos fremeworks ativos no mercado, desde que a versão do PHP no projeto seja superior PHP.7 ou superior. **Esse componente não funcionará em versões anteriores ao PHP.7.**
 
-usabilidade
+#Instalação
 
-Instancie a classe 
+#Uso
+Para fazer o uso correto da biblioteca, é fornecido um enum Estados, que já contem todos os estados brasileiros para serem usados como parametros na solicitação de validação, como:
 
-CheckIEAC - metodo para validar inscrição estadual do Acre
+```php
+Estados::AC(); //para validação de sintegra do Acre.
+Estados::AL(); //para validação de sintegra do Alagoas.
+Estados::AP(); //para validação de sintegra do Amapá.
+Estados::AM(); //para validação de sintegra do Amazonas.
+Estados::BA(); //para validação de sintegra da Bahia.
+Estados::CE(); //para validação de sintegra do Ceará.
+Estados::DF(); //para validação de sintegra do Distrito Federal.
+Estados::GO(); //para validação de sintegra do Goiás.
+Estados::MA(); //para validação de sintegra do Maranhão.
+Estados::MT(); //para validação de sintegra do Mato Grosso.
+Estados::MS(); //para validação de sintegra do Mato Grosso do Sul.
+Estados::MG(); //para validação de sintegra de Minas Gerais.
+Estados::PA(); //para validação de sintegra do Pará.
+Estados::PB(); //para validação de sintegra da Paraíba.
+Estados::PR(); //para validação de sintegra do Paraná.
+Estados::PE(); //para validação de sintegra do Pernambuco.
+Estados::PI(); //para validação de sintegra do Piauí.
+Estados::RJ(); //para validação de sintegra do Rio de Janeiro.
+Estados::RN(); //para validação de sintegra do Rio Grande do Norte.
+Estados::RS(); //para validação de sintegra do Rio Grande do Sul.
+Estados::RO(); //para validação de sintegra de Rondônia.
+Estados::RR(); //para validação de sintegra de Roraima.
+Estados::SC(); //para validação de sintegra de Santa Catarina.
+Estados::SP(); //para validação de sintegra de São Paulo.
+Estados::SE(); //para validação de sintegra de Sergipe.
+Estados::TO(); //para validação de sintegra do Tocantins.
 
-CheckIEAL - metodo para validar inscrição estadual de Alagoas
+```
+Com as declarações dos estados como descrito acima, basta agora a instância da classe de validação, e a parametrização correta, de sintegra e estado, como o exemplo abaixo.
 
-CheckIEAM - metodo para validar inscrição estadual de Amazonas
+```php
+class MinhaClasse 
+{
+	public function validar() : void
+    {
+        $sintegra = new Sintegra();
+        $validacao = $sintegra->validar("0100482300112", Estados::AC());
+        
+        if (!$validacao)
+        	throw new RuntimeException("Sintegra inválido!");
+    }
+}
 
-CheckIEAP - metodo para validar inscrição estadual de Amapá
-
-CheckIEBA - metodo para validar inscrição estadual de Bahia
-
-CheckIECE - metodo para validar inscrição estadual de Ceará
-
-CheckIEDF - metodo para validar inscrição estadual de Distrito Federal
-
-CheckIEES - metodo para validar inscrição estadual de Espírito Santo
-
-CheckIEGO - metodo para validar inscrição estadual de Goias
-
-CheckIEMA - metodo para validar inscrição estadual de Maranhão
-
-CheckIEMT - metodo para validar inscrição estadual de Mato Grosso
-
-CheckIEMS - metodo para validar inscrição estadual de Mato Grosso do Sul
-
-CheckIEMG - metodo para validar inscrição estadual de Minas Gerais
-
-CheckIEPA - metodo para validar inscrição estadual de Pará
-
-CheckIEPB - metodo para validar inscrição estadual de Paraíba
-
-CheckIEPR - metodo para validar inscrição estadual de Paraná
-
-CheckIEPE - metodo para validar inscrição estadual de Pernanbuco
-
-CheckIEPI - metodo para validar inscrição estadual de Píaui
-
-CheckIERJ - metodo para validar inscrição estadual de Rio de Janeiro
-
-CheckIERN - metodo para validar inscrição estadual de Rio Grande do Norte
-
-CheckIERS - metodo para validar inscrição estadual de Rio Grande do Sul
-
-CheckIERO - metodo para validar inscrição estadual de Rondônia
-
-CheckIERR - metodo para validar inscrição estadual de Roraima
-
-CheckIESC - metodo para validar inscrição estadual de Santa Catarina
-
-CheckIESP - metodo para validar inscrição estadual de São Paulo
-
-CheckIESE - metodo para validar inscrição estadual de Sergipe
-
-CheckIETO - metodo para validar inscrição estadual de Tocantins
-
-Ambas as funçõesa acima tem como unico parametro a inscrição estadual retorno verdadeiro quando inscrição válida
+```
+#Considerações finais
+A biblioteca é de uso livre e contribuições para melhorias são aceitas.
 
 
-Função CheckIE permite dinamizar ainda mais bastando passar como parametros a inscrição estadual e a unidade federativa como 
-AC,AL,AM,AP,BA,CE,DF,ES,GO,MA,MG,MS,MT,PA,PB,PE,PI,PR,RJ,RN,RO,RR,RS,SC,SE,SP,TO.
-Sendo retorno verdadeiro quando inscrição válida.
+
