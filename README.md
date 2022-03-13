@@ -6,6 +6,10 @@ A biblioteca foi escrita agnostica a fremework, podendo ser usada como component
 
 # Instalação
 
+``` 
+composer require amdb/valida-sintegra
+```
+
 # Uso
 Para fazer o uso correto da biblioteca, é fornecido um enum Estados, que já contem todos os estados brasileiros para serem usados como parametros na solicitação de validação, como:
 
