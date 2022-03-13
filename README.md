@@ -1,12 +1,12 @@
-#Valida Sintegra PHP
+# Valida Sintegra PHP
 
 A biblioteca de validação de inscrição estadual valida sintegra PHP, foi desenvolvida com o intuito de ser um componente de código aberto e gratuito pra ser integrado ao seu sistema escrito em PHP.
 
 A biblioteca foi escrita agnostica a fremework, podendo ser usada como componente nos mais robustos fremeworks ativos no mercado, desde que a versão do PHP no projeto seja superior PHP.7 ou superior. **Esse componente não funcionará em versões anteriores ao PHP.7.**
 
-#Instalação
+# Instalação
 
-#Uso
+# Uso
 Para fazer o uso correto da biblioteca, é fornecido um enum Estados, que já contem todos os estados brasileiros para serem usados como parametros na solicitação de validação, como:
 
 ```php
@@ -54,7 +54,7 @@ class MinhaClasse
 }
 
 ```
-#Considerações finais
+# Considerações finais
 A biblioteca é de uso livre e contribuições para melhorias são aceitas.
 
 
