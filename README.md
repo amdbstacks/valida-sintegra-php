@@ -41,6 +41,9 @@ Estados::TO(); //para validação de sintegra do Tocantins.
 Com as declarações dos estados como descrito acima, basta agora a instância da classe de validação, e a parametrização correta, de sintegra e estado, como o exemplo abaixo.
 
 ```php
+use Sintegra\Adapters\Sintegra;
+use Sintegra\Domain\Enumeration\Estados;
+
 class MinhaClasse 
 {
 	public function validar() : void
