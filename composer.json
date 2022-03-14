@@ -4,7 +4,8 @@
 	},
 	"name" : "amdb/valida-sintegra",
 	"description" : "Biblioteca de validação de inscrição estadual pra estados brasileiros",
-	"minimum-stability" : "RC",
+	"keywords": ["sintegra","inscrição estadual"],
+	"license": "MIT",
 	"authors" : [{
 			"name" : "Aminadabe Silva",
 			"email" : "aminadabesantos@outlook.com.br"
