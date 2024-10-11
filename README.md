@@ -7,7 +7,7 @@ A biblioteca foi escrita agnostica a fremework, podendo ser usada como component
 # Instalação
 
 ``` 
-composer require amdb/valida-sintegra
+composer require amdbstacks/valida-sintegra
 ```
 
 # Uso
