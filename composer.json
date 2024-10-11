@@ -2,7 +2,7 @@
 	"require" : {
 		"paillechat/php-enum" : "^2.0"
 	},
-	"name" : "amdb/valida-sintegra",
+	"name" : "amdbstacks/valida-sintegra",
 	"description" : "Biblioteca de validação de inscrição estadual pra estados brasileiros",
 	"keywords" : [
 		"sintegra",
